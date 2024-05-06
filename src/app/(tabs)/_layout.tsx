@@ -29,8 +29,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Home',
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -50,8 +50,22 @@ export default function TabLayout() {
       <Tabs.Screen
         name="two"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Laws & Regulations',
+          tabBarIcon: ({ color }) => <TabBarIcon name="gavel" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="three"
+        options={{
+          title: 'Legalities Section',
+          tabBarIcon: ({ color }) => <TabBarIcon name="file-text-o" color={color} />,
+        }}
+      />
+       <Tabs.Screen
+        name="four"
+        options={{
+          title: 'AI Chatbot',
+          tabBarIcon: ({ color }) => <TabBarIcon name="comments-o" color={color} />,
         }}
       />
     </Tabs>
